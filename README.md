@@ -1,5 +1,7 @@
 ## nanaimo-property-opensearch
 
+[Click here to watch the Loom PoC.](https://www.loom.com/share/2593d6b3045743a0abd20e2c18464ad6)
+
 AI tool to answer property-related questions and to suggest development opportunities on parcels of land in Nanaimo, BC.
 
 ### What this API does
