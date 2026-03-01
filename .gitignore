@@ -6,6 +6,16 @@ __pycache__/
 # C extensions
 *.so
 
+# Secrets
+.env*
+
+# Dependencies
+node_modules
+
+# OS files
+.DS_Store
+Thumbs.db
+
 # Distribution / packaging
 .Python
 build/

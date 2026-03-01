@@ -1,0 +1,22 @@
+info:
+  name: Simple Property Request
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8000/analyze
+  body:
+    type: json
+    data: |-
+      {
+        "address": "5709 Malibu Terrace",
+        "question": "Can I build a duplex here and what are the setback requirements?"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
