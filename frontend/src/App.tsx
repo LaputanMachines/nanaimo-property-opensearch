@@ -57,9 +57,7 @@ const API_BASE_URL =
 
 function App() {
   const [address, setAddress] = useState("");
-  const [question, setQuestion] = useState(
-    "What kinds of small-scale housing or gentle density might be feasible on this property, and what should I watch out for?",
-  );
+  const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<AnalysisResponse | null>(null);
@@ -165,6 +163,7 @@ function App() {
                 <textarea
                   id="question"
                   className="textarea"
+                  placeholder="e.g. What kinds of small-scale housing or gentle density might be feasible on this property?"
                   value={question}
                   onChange={(e) => setQuestion(e.target.value)}
                 />

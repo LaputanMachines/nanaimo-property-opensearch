@@ -188,21 +188,40 @@ a {
 
 .answer-body {
   font-size: 0.9rem;
-  line-height: 1.6;
+  line-height: 1.45;
   color: #e5e7eb;
   white-space: pre-wrap;
+}
+
+.answer-body p {
+  margin: 0.3rem 0;
+}
+
+.answer-body p:first-child {
+  margin-top: 0;
 }
 
 .answer-body h1,
 .answer-body h2,
 .answer-body h3 {
-  margin: 0.6rem 0 0.25rem;
+  margin: 0.5rem 0 0.15rem;
   font-size: 1rem;
 }
 
-.answer-body ul {
+.answer-body h1:first-child,
+.answer-body h2:first-child,
+.answer-body h3:first-child {
+  margin-top: 0;
+}
+
+.answer-body ul,
+.answer-body ol {
   padding-left: 1.1rem;
-  margin: 0.4rem 0;
+  margin: 0.25rem 0;
+}
+
+.answer-body li {
+  margin: 0.1rem 0;
 }
 
 .meta-grid {

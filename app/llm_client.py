@@ -18,10 +18,6 @@ def _build_prompt(
         "You are an assistant helping with high‑level land use and "
         "development questions in Nanaimo, BC, Canada."
     )
-    lines.append(
-        "You are not a lawyer or planner; clearly state that this is "
-        "informational only and users must confirm with the City."
-    )
     lines.append("")
     lines.append(f"Property address: {address}")
     if parcel is not None:
@@ -69,10 +65,6 @@ def _build_prompt(
     lines.append(
         "- Concrete but high‑level development ideas that might be feasible on "
         "this lot, with appropriate caveats."
-    )
-    lines.append(
-        "Always end with a short disclaimer reminding the user to confirm details "
-        "with the City of Nanaimo and/or a qualified professional."
     )
 
     return "\n".join(lines)
