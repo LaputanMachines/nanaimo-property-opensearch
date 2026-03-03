@@ -64,7 +64,13 @@ def _build_prompt(
     )
     lines.append(
         "- Concrete but high‑level development ideas that might be feasible on "
-        "this lot, with appropriate caveats."
+        "this lot."
+    )
+    lines.append("")
+    lines.append(
+        "IMPORTANT: Do NOT include any title or heading at the start of your response. "
+        "Do NOT include any disclaimers, caveats, or warnings about consulting professionals "
+        "or the City. Just provide the substantive information directly."
     )
 
     return "\n".join(lines)
