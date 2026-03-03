@@ -25,9 +25,7 @@ run:
 		echo "Session $(TMUX_SESSION) already exists. Attaching..."; \
 		tmux attach -t "$(TMUX_SESSION)"; \
 	} || { \
-		# Pane 0: backend (FastAPI) \
 		tmux new-session -d -s "$(TMUX_SESSION)" "cd $$(pwd) && source $(VENV_DIR)/bin/activate && uvicorn $(UVICORN_APP) --host 0.0.0.0 --port 8000 --reload"; \
-		# Pane 1: frontend (Vite) \
 		tmux split-window -h -t "$(TMUX_SESSION):0" "cd $$(pwd)/$(FRONTEND_DIR) && npm run dev"; \
 		tmux select-layout -t "$(TMUX_SESSION):0" tiled; \
 		tmux attach -t "$(TMUX_SESSION)"; \
